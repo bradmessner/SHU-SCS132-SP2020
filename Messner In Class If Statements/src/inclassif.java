@@ -23,6 +23,7 @@ public class inclassif {
 			System.out.println("Your mother said to go home.");
 		} 
 		
+		
 		if (grade >80)
 			System.out.println("Good job.");
 		else
@@ -40,6 +41,14 @@ public class inclassif {
 		if (grade < 60)
 			System.out.println("See me after class.");
 		
+		
+		switch (grade) {
+			case 90:
+				System.out.println("Great job.");
+				break;
+			default:
+				//	
+		}
 		
 	}
 
