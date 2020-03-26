@@ -17,7 +17,7 @@ public class BankAccount {
 	{
 		// Set the initial balance of account
 		balance = 0;
-		interestRate = .02;
+		interestRate = .02;			// Set interest to 2%
 	}
 	
 	// Deposit funds
@@ -51,10 +51,11 @@ public class BankAccount {
 		// only calculate interest for S or I accounts
 		if (type =='S' || type =='I')
 		{
-			//double interestAmount;
-			//interestAmount = balance * interestRate;
-			//balance += interestAmount;
-			balance = balance * (1+interestRate);
+			double interestAmount;
+			interestAmount = balance * interestRate;
+			balance += interestAmount;
+			
+			// balance = balance * (1+interestRate);		// multiply times 1.02
 		}
 	}
 	
