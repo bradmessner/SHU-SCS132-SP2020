@@ -16,6 +16,7 @@ public class program6 {
 		// Declare variables
 		Scanner keyboard = new Scanner(System.in);
 		Random randomNumber = new Random();
+		
 		int teamOneTotal = 0;
 		int teamTwoTotal = 0;
 		String teamOne = "Seton Hill:\t";
@@ -27,13 +28,15 @@ public class program6 {
 
 		// Create the array
 		int[][] scores = new int[2][sections];		// 2 col, X rows
-
+																//8
 		// LOOP ONE: Loop through rows first
 		for (int row = 0; row<scores[0].length; row++)
 		{
+			
 			// LOOP TWO: Loop through cols second
 			for (int col = 0; col<scores.length; col++)
 			{
+				
 				// Random info for Team One
 				if(col == 0)
 				{
@@ -64,6 +67,10 @@ public class program6 {
 		System.out.println(teamOne + "=\t" + teamOneTotal);
 		System.out.println(teamTwo + "=\t" + teamTwoTotal);
 
+		
+		
+		
+		
 		if (teamOneTotal == teamTwoTotal)
 		{
 			System.out.println("There was a tie!");
