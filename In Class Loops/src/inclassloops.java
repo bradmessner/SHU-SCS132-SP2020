@@ -8,7 +8,7 @@ public class inclassloops {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int numberOfPickles = 0;
+		int numberOfPickles = 24;
 		
 		// Loop through and reduce pickles by one every time you eat them
 		while(numberOfPickles > 0)
@@ -27,15 +27,22 @@ public class inclassloops {
 		
 
 		
-		int concertTickets = 4;
+		int concertTickets = 5;
 		
 		// Reduce the number of tickets by 2 every time you attend a concert.
 		do
 		{
 			// Reduce tickets by 2
 			concertTickets--;
-			concertTickets--;
-
+			
+			if(concertTickets==1)
+			{
+				System.out.println("Too bad. I am going alone.");
+			}
+			else
+			{
+				concertTickets--;
+			}
 			
 			// Output remaining tickets
 			System.out.println("That is a great concert.");
@@ -47,7 +54,7 @@ public class inclassloops {
 		// We do NOT need to initialize age in advance)
 		// int age = 0;
 		
-		// Loop and count UP until the user drive
+		// Loop and count UP until the user can drive
 		
 		for(int age = 0; age <= 18; age++)
 		{
@@ -57,8 +64,13 @@ public class inclassloops {
 			else
 			{
 				if (age == 16)
+				{
 					System.out.println("Good luck on your drivers test.");
-
+					break;
+				}
+				if (age == 17)
+					System.out.println("Enjoy Pineapple Express. You can watch an R movie.");
+				
 				if (age == 18) 
 				{
 					System.out.println("You can now vote.");
