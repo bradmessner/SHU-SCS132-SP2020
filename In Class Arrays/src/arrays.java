@@ -72,10 +72,8 @@ public class arrays {
 		
 		
 		// Create a 2D array
-		int[][] favoriteNumbers = new int[2][3];	// 2 columns, 3 rows
-													//    5		8			0,0
-													//	  9		12
-													// 	  2		11
+		int[][] favoriteNumbers = new int[2][3];	// 2 rows, 3 columns
+													
 		favoriteNumbers[0][0] = 5;
 		favoriteNumbers[0][1] = 9;
 		favoriteNumbers[0][2] = 2;
